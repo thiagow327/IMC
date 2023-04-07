@@ -6,24 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <h1>
-        Calcule o seu IMC
-    </h1>
+    <header>
+        <h1>
+            Calcule o seu IMC
+        </h1>
+    </header>
     <section>
         <div id="formulario">
-            <p>Peso:<input type="number" name="peso" id="peso"></p>
-            <p>Altura:<input type="number" name="altura" id="altura"></p>
-            <p><input type="button" value="Calcular" onclick="calcular()"></p>
+            <p>Peso:</p>
+            <input type="number" name="peso" id="peso">
+            <p>Altura:</p>
+            <input type="number" name="altura" id="altura">
+            <p><input id='calcular' type="button" value="Calcular" onclick="calcular()"></p>
         </div>
         <div id="resultado">
             Preencha os dados acima para ver o resultado.
         </div>
         <div id="ilustracao">
-            <img id="imagem" src="images/baixo-peso.jpg" alt="imagem">
-            <p id="classificacao">t</p>
+            <img id="imagem" src="images/peso-normal.jpg" alt="imagem">
+            <p id="classificacao"></p>
         </div>
     </section>
     <footer>
